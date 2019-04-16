@@ -17,5 +17,5 @@ for c in input:
     floor += 1 if c == '(' else -1
     currChar += 1
     if floor < 0:
-        print(currChar)
+        print("The first time santa enters the basement is: " + str(currChar))
         break
