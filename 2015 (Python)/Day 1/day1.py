@@ -7,8 +7,8 @@ input = f.read()
 f.close()
 
 # first star - count the symbols and subtract them
-partOne = input.count('(') - input.count(')')
-print("Santa ends up at floor: " + str(partOne))
+endFloor = input.count('(') - input.count(')')
+print("Santa ends up at floor: " + str(endFloor))
 
 # second star - update floor number and watch when floor < 0
 floor = 0
