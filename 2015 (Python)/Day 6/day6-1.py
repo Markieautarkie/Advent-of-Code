@@ -31,3 +31,13 @@ for s in input:
         Mode(s[1], s[3], 2)
     else:
         Mode(s[2], s[4], 1) if "on" in s else Mode(s[2], s[4], 0)
+
+# update the lit variable depending on if a light is lit or not
+lit = 0
+for x in range(d):
+    for y in range(d):
+        if grid[x][y] == 1:
+            lit += 1
+
+# print the amount of lit lights
+print(lit)
